@@ -1,0 +1,385 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/*Tamaño Celular*/
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-image: linear-gradient(90deg, #74ebd525 0%, #9face631 80%);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background: url(../imagen/saludImagen.jpg);
+
+}
+
+/* Fondos de cada HTML*/
+
+.bodyIndex{
+    background-image: url(../imagen/imaTexto.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    opacity: 95%;
+
+}
+
+.bodyServicios{
+    background-image: url(../imagen/imgServicios.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.bodyNosotros{
+    background-image: url(../imagen/imgNosotros.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.bodyQuienes{
+    background-image: url(../imagen/quienesSomos.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.bodyCobertura{
+    background-image: url(../imagen/bodyCobertura.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+}
+
+
+
+
+/* Estilos Logo**/
+
+header {
+    background-color: #f8d8efc9;
+    background-image: linear-gradient(90deg, #74ebd525 0%, #9face631 100%);
+    padding: 1rem;
+    border: 1rem;
+}
+
+header img {
+
+    width: 100%;
+    height: 12rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -3rem;
+    margin-bottom: -2rem;
+}
+
+main {
+
+    opacity: 95%;
+
+}
+
+.claseMain {
+
+    padding: 0.5rem;
+    margin: 0.5rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-image: url(../imagen/imgPng.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100%;
+
+    color: #ffffff;
+
+
+}
+/* TITUOSS MAIN SERVICIOS Y OTROS */
+
+.claseServicios{
+    background-color: #ffffff;
+    opacity: 80%;
+}
+
+.contenedorServicios{
+    margin: 1rem;
+    text-align: justify;
+}
+
+.titulosServicios{
+    text-align: center;
+    text-decoration: underline;
+    padding: 0.5rem;
+}
+
+.contenedorCobertura{
+    margin: 1rem;
+    text-align: center;
+    
+
+}
+
+/* estilo tablas cobertura*/
+
+/*clase de checkbox cobertura*/
+
+.checkBox{
+
+    text-align: justify;
+ 
+
+}
+
+
+/*ESTILOS QUIENES */
+
+.contenedorQuienes{
+    margin: 1rem;
+    text-align: center;
+    background-color: rgb(237, 237, 237);
+    color: black;
+}
+
+/*Estilo IFRAME*/
+
+iframe{
+    width: 100%;
+   
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+
+
+}
+
+
+
+
+
+
+.parrafo {
+
+    padding: 0.5rem;
+    margin: 0.5rem;
+  
+    text-align: center;
+    background-color: #ffffff;
+    opacity: 80%;
+}
+
+
+
+
+
+.claseFooter {
+    padding: 0.5rem;
+    margin: 0.5rem;
+
+}
+
+.claseFooterCompany {
+    text-align: center;
+}
+
+
+
+
+
+/******************
+
+Estilos TABLET     */
+
+@media screen and (min-width:768px) {
+    body {
+
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+
+            "header header header"
+            "nav nav nav"
+            "main main main"
+            "section section section"
+            "footer footer footer"
+
+    }
+
+    /* estilos de la tablet*/
+
+    header {
+
+        grid-area: header;
+
+
+    }
+
+    header img {
+        display: flex;
+        justify-content: center;
+        width: 30rem;
+        height: 15rem;
+        margin-top: -3rem;
+        margin-bottom: -1.5rem;
+
+
+    }
+
+
+
+    nav {
+        grid-area: nav;
+    }
+
+    main {
+        grid-area: main;
+    }
+
+    section {
+        grid-area: section;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+
+
+
+
+
+
+
+
+}
+
+
+/**
+
+Estilos PC computadora*/
+
+@media screen and (min-width:1280px) {
+    body {
+
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            "header header header header"
+            "nav nav nav nav"
+            "main main main main"
+            "section section section section"
+            "footer footer footer footer"
+    }
+
+    /* estilos de la PC de escritorio*/
+
+    header {
+        grid-area: header;
+
+    }
+
+    header img {
+        display: flex;
+        justify-content: center;
+        width: 35rem;
+        height: 25rem;
+        margin-top: -7rem;
+        margin-bottom: -5rem;
+
+    }
+
+
+
+    nav {
+        grid-area: nav;
+    }
+
+    main {
+        grid-area: main;
+    }
+
+    section {
+        grid-area: section;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+
+
+
+
+
+    *{margin: 0;padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;}
+        
+        .contenedor{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .contenedor figure{
+           position:relative;
+            height: 250px;
+            cursor: pointer;
+            width: 350px;
+            overflow: hidden;
+            border-radius: 6px;
+            box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+        }
+        .contenedor figure img{
+            width: 100%;
+            height: 100%;
+            transition: all 400ms ease-out;
+            will-change: transform;
+        }
+        .contenedor figure .capa{
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,103,123,0.7);
+            transition: all 400ms ease-out;
+            opacity: 0;
+            visibility: hidden;
+           text-align: center;
+        }
+        .contenedor figure:hover > .capa {
+            opacity: 1;
+            visibility: visible;
+        }
+        .contenedor figure:hover > .capa h3{
+            margin-top: 70px;
+            margin-bottom: 15px;
+        }
+        .contenedor figure:hover > img{
+            transform: scale(1.3);
+        }
+        .contenedor figure .capa h3{
+            color: #fff;
+            font-weight: 400;
+            margin-bottom: 120px;
+            transition: all 400ms ease-out;
+             margin-top: 30px;
+        }
+        .contenedor figure .capa p{
+            color: #fff;
+            font-size: 15px;
+            line-height: 1.5;
+            width: 100%;
+            max-width: 220px;
+            margin: auto;
+        }
+    
+
+}
